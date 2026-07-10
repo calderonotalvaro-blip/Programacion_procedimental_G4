@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css" />
+    <link rel="stylesheet" href="/Programaci-nProcedimental-/restaurante/css/inventario.css">
+    <title>Inventario</title>
+</head>
+
+<body>
+    <div class="box">
+        <article class="media">
+            <div class="media-content">
+                <div class="content">
+
+                    <div class="field">
+                        <label class="label">FORMULARIO DE INVENTARIO</label>
+                        <div class="control">
+                            <input id="txtCodigo" class="input" type="text" placeholder="Codigo Producto">
+                        </div>
+                    </div>
+
+                    <div class="field">
+                        <label class="label">Nombre Producto</label>
+                        <div class="control has-icons-left has-icons-right">
+                            <input id="txtNombre" class="input" type="text" placeholder="Nombre Producto">
+                        </div>
+                    </div>
+
+                    <div class="field">
+                        <label class="label">Cantidad de producto</label>
+                        <div class="control has-icons-left has-icons-right">
+                            <input id="txtCantidad" class="input" type="number" placeholder="Cantidad de producto">
+                        </div>
+                    </div>
+
+                    <div class="field">
+                        <label class="label">Descripcion Producto</label>
+                        <div class="control has-icons-left has-icons-right">
+                            <input id="txt遊Descripcion" class="input" type="text" placeholder="Descripcion Producto">
+                        </div>
+                    </div>
+
+                    <div class="field">
+                        <label class="label">Marca Producto</label>
+                        <div class="control has-icons-left has-icons-right">
+                            <input id="txtMarca" class="input" type="text" placeholder="Marca Producto">
+                        </div>
+                    </div>
+
+                    <div class="field">
+                        <label class="label">Valor Unitario</label>
+                        <div class="control has-icons-left has-icons-right">
+                            <input id="txtValorUnitario" class="input" type="number" placeholder="Valor Unitario">
+                        </div>
+                    </div>
+
+                    <div class="field">
+                        <label class="label">Categoria Producto</label>
+                        <div class="control has-icons-left has-icons-right">
+                            <input id="txtCategoria" class="input" type="text" placeholder="Categoria Producto">
+                        </div>
+                    </div>
+
+                    <div class="field">
+                        <label class="label">Ubicacion Producto</label>
+                        <div class="control has-icons-left has-icons-right">
+                            <input id="txtUbicacion" class="input" type="text" placeholder="Ubicacion Producto">
+                        </div>
+                    </div>
+
+                </div>
+                
+                <div class="field is-grouped mt-4">
+                    <div class="control">
+                        <button onclick="ValidarDatos()" class="button is-primary">Validar Inventario</button>
+                    </div>
+                    <div class="control">
+                        <a href="../index.html"><button class="button">volver al inicio</button></a>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="inventario.js"></script>
+</body>
+
+</html>

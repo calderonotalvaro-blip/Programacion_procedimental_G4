@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css" />
+    <link rel="stylesheet" href="/Programaci-nProcedimental-/restaurante/css/usuarios.css">
+    <title>CONTABILIDAD</title>
+</head>
+
+<body>
+    <div class="box">
+        <article class="media">
+            <div class="media-content">
+                <div class="content">
+                    <h1 class="title has-text-centered">MÓDULO DE CONTABILIDAD</h1>
+
+                    <div class="field">
+                        <label class="label">INGRESOS</label>
+                        <div class="control">
+                            <input id="txtIngresos" class="input" type="text" placeholder="Ej: 1500000">
+                        </div>
+                    </div>
+
+                    <div class="field">
+                        <label class="label">EGRESOS</label>
+                        <div class="control has-icons-left has-icons-right">
+                            <input id="txtEgresos" class="input" type="text" placeholder="Ej: 600000">
+                            <span class="icon is-small is-left">
+                                <i class="fas fa-user"></i>
+                            </span>
+                            <span class="icon is-small is-right">
+                                <i class="fas fa-check"></i>
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="field">
+                        <label class="label">CONCEPTO</label>
+                        <div class="control">
+                            <input id="txtConcepto" class="input" type="text" placeholder="Ej: Cierre de caja mensual">
+                        </div>
+                    </div>
+
+                    <div class="field">
+                        <label class="label">FECHA</label>
+                        <div class="control has-icons-left has-icons-right">
+                            <input id="txtFecha" class="input" type="text" placeholder="Ej: 31 de Mayo o 31/05/2026">
+                            <span class="icon is-small is-left">
+                                <i class="fas fa-user"></i>
+                            </span>
+                            <span class="icon is-small is-right">
+                                <i class="fas fa-check"></i>
+                            </span>
+                        </div>
+                    </div>
+
+                </div>
+
+                <nav class="level is-mobile">
+                    <div class="level-left">
+                        <a class="level-item" aria-label="retweet">
+                            <span class="icon is-small">
+                                <i class="fas fa-retweet" aria-hidden="true"></i>
+                            </span>
+                        </a>
+                        <a class="level-item" aria-label="like">
+                            <span class="icon is-small">
+                                <i class="fas fa-heart" aria-hidden="true"></i>
+                            </span>
+                        </a>
+                    </div>
+                </nav>
+                
+                <div class="field is-grouped mt-4">
+                    <div class="control">
+                        <button onclick="ValidarDatos()" class="button is-primary">Validar Contabilidad</button>
+                    </div>
+                    <div class="control">
+                        <a href="../index.html"><button class="button">volver al inicio</button></a>
+                    </div>
+                </div>
+
+            </div>
+        </article>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="contabilidad.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css" />
+    <link rel="stylesheet" href="/Programaci-nProcedimental-/restaurante/css/inventario.css">
+    <title>pedido</title>
+</head>
+
+<body>
+    <div class="box">
+        <article class="media">
+            <div class="media-content">
+                <div class="content">
+
+                    <div class="field">
+                        <label class="label">producto</label>
+                        <div class="control">
+                            <input id="txtCodigoProd" class="input" type="text" placeholder="Codigo Producto">
+                        </div>
+                    </div>
+
+                    <div class="field">
+                        <label class="label">Nombre Producto</label>
+                        <div class="control has-icons-left has-icons-right">
+                            <input id="txtNombreProd" class="input" type="text" placeholder="Ej: Arroz con Pollo">
+                            <span class="icon is-small is-left">
+                                <i class="fas fa-user"></i>
+                            </span>
+                            <span class="icon is-small is-right">
+                                <i class="fas fa-check"></i>
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="field">
+                        <label class="label">direccion</label>
+                        <div class="control has-icons-left has-icons-right">
+                            <input id="txtDireccion" class="input" type="text" placeholder="Escriba a donde quiere el pedido">
+                            <span class="icon is-small is-left">
+                                <i class="fas fa-user"></i>
+                            </span>
+                            <span class="icon is-small is-right">
+                                <i class="fas fa-check"></i>
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="field">
+                        <label class="label">nombre del usuario</label>
+                        <div class="control has-icons-left has-icons-right">
+                            <input id="txtNombreUser" class="input" type="text" placeholder="Escriba su nombre completo">
+                            <span class="icon is-small is-left">
+                                <i class="fas fa-user"></i>
+                            </span>
+                            <span class="icon is-small is-right">
+                                <i class="fas fa-check"></i>
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="field">
+                        <label class="label">cantidad</label>
+                        <div class="control has-icons-left has-icons-right">
+                            <input id="txtCantidad" class="input" type="text" placeholder="Ej: 2">
+                            <span class="icon is-small is-left">
+                                <i class="fas fa-user"></i>
+                            </span>
+                            <span class="icon is-small is-right">
+                                <i class="fas fa-check"></i>
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="field">
+                        <label class="label">metodo de pago</label>
+                        <div class="control has-icons-left has-icons-right">
+                            <input id="txtMetodoPago" class="input" type="text" placeholder="Paga con efectivo o tarjeta">
+                            <span class="icon is-small is-left">
+                                <i class="fas fa-user"></i>
+                            </span>
+                            <span class="icon is-small is-right">
+                                <i class="fas fa-check"></i>
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="field">
+                        <label class="label">págo</label>
+                        <div class="control has-icons-left has-icons-right">
+                            <input id="txtValorCancelar" class="input" type="text" placeholder="Mencione cuanto cuesta el pedido">
+                            <span class="icon is-small is-left">
+                                <i class="fas fa-user"></i>
+                            </span>
+                            <span class="icon is-small is-right">
+                                <i class="fas fa-check"></i>
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="field">
+                        <label class="label">telefono</label>
+                        <div class="control has-icons-left has-icons-right">
+                            <input id="txtTelefono" class="input" type="text" placeholder="Escriba su numero de contacto">
+                            <span class="icon is-small is-left">
+                                <i class="fas fa-user"></i>
+                            </span>
+                            <span class="icon is-small is-right">
+                                <i class="fas fa-check"></i>
+                            </span>
+                        </div>
+                    </div>
+
+                </div>
+
+                <nav class="level is-mobile">
+                    <div class="level-left">
+                        <a class="level-item" aria-label="reply">
+                            <span class="icon is-small">
+                                <i class="fas fa-reply" aria-hidden="true"></i>
+                            </span>
+                        </a>
+                        <a class="level-item" aria-label="retweet">
+                            <span class="icon is-small">
+                                <i class="fas fa-retweet" aria-hidden="true"></i>
+                            </span>
+                        </a>
+                        <a class="level-item" aria-label="like">
+                            <span class="icon is-small">
+                                <i class="fas fa-heart" aria-hidden="true"></i>
+                            </span>
+                        </a>
+                    </div>
+                </nav>
+                
+                <div class="field is-grouped mt-4">
+                    <div class="control">
+                        <button onclick="ValidarDatos()" class="button is-primary">Validar Pedido</button>
+                    </div>
+                    <div class="control">
+                        <a href="../index.html"><button class="button">volver al inicio</button></a>
+                    </div>
+                </div>
+
+            </div>
+        </article>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="pedidos.js"></script>
+</body>
+
+</html>
